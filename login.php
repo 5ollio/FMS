@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Login</title>
+    <title>Login V8</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="css/util.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
     <!--===============================================================================================-->
 </head>
 
@@ -32,33 +32,30 @@
     <div class="limiter">
         <div class="container-login100">
             <div class="wrap-login100">
-
-                <!-- --------- The begining of Form -------------------- -->
-
                 <form class="login100-form validate-form p-l-55 p-r-55 p-t-178">
                     <span class="login100-form-title">
                         Sign In
                     </span>
 
-
-                    <!-- ----------user name Input------------ -->
                     <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
                         <input class="input100" type="text" name="username" placeholder="Username">
                         <span class="focus-input100"></span>
                     </div>
 
-                    <!---------end of username input------------------->
-
-                    <!-- ------------password input-------------------->
                     <div class="wrap-input100 validate-input" data-validate="Please enter password">
                         <input class="input100" type="password" name="pass" placeholder="Password">
                         <span class="focus-input100"></span>
                     </div>
 
-                    <br>
-                    <br>
+                    <div class="text-right p-t-13 p-b-23">
+                        <span class="txt1">
+                            Forgot
+                        </span>
 
-                    <!-- ------------end of password input------------- -->
+                        <a href="#" class="txt2">
+                            Username / Password?
+                        </a>
+                    </div>
 
                     <div class="container-login100-form-btn">
                         <button class="login100-form-btn">
@@ -71,13 +68,11 @@
                             Don’t have an account?
                         </span>
 
-                        <a href="#" class="txt3">
+                        <a href="signin-up.php" class="txt3">
                             Sign up now
                         </a>
                     </div>
                 </form>
-
-                <!-- ---------------------The End of Form----------------- -->
             </div>
         </div>
     </div>
