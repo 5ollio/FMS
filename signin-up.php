@@ -111,7 +111,7 @@
                         <div class="value">
                             <div class="input-group">
                                 <div class="rs-select2 js-select-simple select--no-search">
-                                    <select name="subject">
+                                    <select name="Level">
                                         <option disabled="disabled" selected="selected">Choose option</option>
                                         <option>level 1</option>
                                         <option>level 2</option>
