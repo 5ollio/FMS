@@ -7,7 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>subject</title>
     <link rel="stylesheet" href="../css/subject.css">
-
+    <script>
+    var a;
+    showHidden() {
+        if (a === 1) {
+            document.getElementById("add").style.display = "none";
+            return a = 0;
+        } else {
+            document.getElementById("add").style.display = "inline";
+            return a = 1;
+        }
+    }
+    </script>
 </head>
 
 <body>
@@ -36,14 +47,14 @@
         </section>
 
         <!-- Page Content  -->
-        <div id="dashboard">
+        <div id="subject">
             <div id="content">
                 <div class="header">
                     <div>
                         <h1>Subjects</h1>
                     </div>
                     <div>
-                        <img src="../images/plus-square.svg" alt="">
+                        <img src="../images/plus-square.svg" alt="ADD subject" onclick="showHidden()">
                     </div>
                 </div>
                 <div class="table">
@@ -61,6 +72,30 @@
                         </tbody>
                     </table>
                 </div>
+            </div>
+            <div class="add" id="add">
+                <h1>Add Subject</h1>
+                <form action="" method="POST">
+                    <div data-validate="enter The Name">
+                        <input class="input100" type="text" name="username-add" placeholder="Name">
+                    </div>
+                    <div data-validate="enter The Number Of Course">
+                        <input class="input100" type="text" name="Number-add" placeholder="Number">
+                    </div>
+                    <div data-validate="enter The Semester">
+                        <input class="input100" type="text" name="Sem-add" placeholder="Semester">
+                    </div>
+                    <div>
+                        <select name="Level2">
+                            <option disabled="disabled" selected="selected">level</option>
+                            <option>level 1</option>
+                            <option>level 2</option>
+                            <option>level 3</option>
+                            <option>level 4</option>
+                        </select>
+                        <div class="select-dropdown"></div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
