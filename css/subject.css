@@ -120,6 +120,7 @@ a:focus {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+    transform: translateX(50%);
 }
 
 /* ---------------------------------------------------
@@ -143,6 +144,24 @@ a:focus {
 /* ----------------------------------------------------------- */
 /* Table Style */
 /* ------------------------------------------------------------ */
+.header {
+    position: relative;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+.header img {
+    position: absolute;
+    top: 110px;
+    left: 590px;
+}
+
+.subject {
+    position: relative;
+}
+
 .table {
     margin-top: 100px;
     display: flex;
@@ -158,9 +177,47 @@ a:focus {
 .table {
     width: fit-content;
     background: #EEE;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .table thead tr th {
     padding: 20px 50px;
     border: 1px solid black;
+}
+
+
+.add {
+    position: absolute;
+    border: 1px solid transparent;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 500px;
+    height: 500px;
+    transform: translate(80%, -130%);
+    background-color: #EEE;
+    opacity: 90%;
+    display: none;
+
+}
+
+.add h1 {
+    text-align: center;
+}
+
+.add form {
+    margin: 50px;
+
+}
+
+.add form input {
+    width: 400px;
+    margin-top: 30px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+.add form select {
+    margin-top: 100px;
+    width: 100px;
+    height: 25px;
 }
